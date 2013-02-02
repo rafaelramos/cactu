@@ -1,5 +1,13 @@
 * { margin: 0; }
-html, body { height: 100%; }
+html, body {
+	height: 100%;
+	font: 14px Arial, Helvetica, sans-serif;
+	color: #333333;
+	line-height: 20px;
+}
+
+/* ============== GRID ============== */
+
 .container, .row {
 	margin: 0 auto;
 	width: 1200px;
@@ -11,6 +19,8 @@ html, body { height: 100%; }
   	float: left;
   	margin-left: 15px;
   	margin-right: 15px;
+  	border: thick 1px solid transparent;
+  	overflow: hidden;
 }
 
 .col12 { width: 1170px; }
@@ -26,27 +36,31 @@ html, body { height: 100%; }
 .col2 { width: 170px; }
 .col1 { width: 70px; }
 
-.offset12 { margin-left: 970px; }
-.offset11 { margin-left: 890px; }
-.offset10 { margin-left: 810px; }
-.offset9 { margin-left: 730px; }
-.offset8 { margin-left: 650px; }
-.offset7 { margin-left: 570px; }
-.offset6 { margin-left: 490px; }
-.offset5 { margin-left: 410px; }
-.offset4 { margin-left: 330px; }
-.offset3 { margin-left: 250px; }
-.offset2 { margin-left: 170px; }
-.offset1 { margin-left: 90px; }
+.offset11 { margin-left: 1115px; }
+.offset10 { margin-left: 1015px; }
+.offset9 { margin-left: 915px; }
+.offset8 { margin-left: 815px; }
+.offset7 { margin-left: 715px; }
+.offset6 { margin-left: 615px; }
+.offset5 { margin-left: 515px; }
+.offset4 { margin-left: 415px; }
+.offset3 { margin-left: 315px; }
+.offset2 { margin-left: 215px; }
+.offset1 { margin-left: 115px; }
 
-.center11 { margin-left: 50px; margin-right: 50px; }
-.center10 { margin-left: 90px; margin-right: 90px; }
-.center9 { margin-left: 130px; margin-right: 130px; }
-.center8 { margin-left: 170px; margin-right: 170px; }
-.center7 { margin-left: 210px; margin-right: 210px; }
-.center6 { margin-left: 250px; margin-right: 250px; }
-.center5 { margin-left: 290px; margin-right: 290px; }
-.center4 { margin-left: 330px; margin-right: 330px; }
-.center3 { margin-left: 370px; margin-right: 370px; }
-.center2 { margin-left: 410px; margin-right: 410px; }
-.center1 { margin-left: 450px; margin-right: 450px; }
+[class*="center"] { text-align: center; }
+
+.center12 { margin-left: 15px; margin-right: 15px; }
+.center11 { margin-left: 65px; margin-right: 65px; }
+.center10 { margin-left: 115px; margin-right: 115px; }
+.center9 { margin-left: 165px; margin-right: 165px; }
+.center8 { margin-left: 215px; margin-right: 215px; }
+.center7 { margin-left: 265px; margin-right: 265px; }
+.center6 { margin-left: 315px; margin-right: 315px; }
+.center5 { margin-left: 365px; margin-right: 365px; }
+.center4 { margin-left: 415px; margin-right: 415px; }
+.center3 { margin-left: 465px; margin-right: 465px; }
+.center2 { margin-left: 515px; margin-right: 515px; }
+.center1 { margin-left: 565px; margin-right: 565px; }
+
+/* ==================== END GRID ==================== */
