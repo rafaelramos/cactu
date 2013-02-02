@@ -2,29 +2,29 @@
 html, body { height: 100%; }
 .container, .row {
 	margin: 0 auto;
-	width: 960px;
+	width: 1200px;
   	border: thick 1px solid transparent;
   	overflow: hidden;
 }
 
 [class*="col"] {
   	float: left;
-  	margin-left: 10px;
-  	margin-right: 10px;
+  	margin-left: 15px;
+  	margin-right: 15px;
 }
 
-.col12 { width: 940px; }
-.col11 { width: 860px; }
-.col10 { width: 780px; }
-.col9 { width: 700px; }
-.col8 { width: 620px; }
-.col7 { width: 540px; }
-.col6 { width: 460px; }
-.col5 { width: 380px; }
-.col4 { width: 300px; }
-.col3 { width: 220px; }
-.col2 { width: 140px; }
-.col1 { width: 60px; }
+.col12 { width: 1170px; }
+.col11 { width: 1070px; }
+.col10 { width: 970px; }
+.col9 { width: 870px; }
+.col8 { width: 770px; }
+.col7 { width: 670px; }
+.col6 { width: 570px; }
+.col5 { width: 470px; }
+.col4 { width: 370px; }
+.col3 { width: 270px; }
+.col2 { width: 170px; }
+.col1 { width: 70px; }
 
 .offset12 { margin-left: 970px; }
 .offset11 { margin-left: 890px; }
