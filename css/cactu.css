@@ -1,0 +1,109 @@
+/*
+ * Cactu v0.0.4
+ * 
+ * Copyright 2013 Julio Giovanni Mendoza Rentería
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Designed and built with all the love in the design.
+ *
+ *
+ *
+ */
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  font: 14px Arial, Helvetica, sans-serif;
+  color: #333333;
+  line-height: 20px;
+}
+/* ============== GRID 960 ============== */
+.container,
+.row {
+  margin: 0 auto;
+  border: thick solid transparent;
+  overflow: hidden;
+  width: 960px;
+}
+[class*="col"] {
+  border: thick solid transparent;
+  overflow: hidden;
+  float: left;
+  margin: 0 10px 0 10px;
+}
+.col12 {
+  width: 940px;
+}
+.col11 {
+  width: 860px;
+}
+.col10 {
+  width: 780px;
+}
+.col9 {
+  width: 700px;
+}
+.col8 {
+  width: 620px;
+}
+.col7 {
+  width: 540px;
+}
+.col6 {
+  width: 460px;
+}
+.col5 {
+  width: 380px;
+}
+.col4 {
+  width: 300px;
+}
+.col3 {
+  width: 220px;
+}
+.col2 {
+  width: 140px;
+}
+.col1 {
+  width: 60px;
+}
+/* Offsets */
+.offset11 {
+  margin-left: 880px;
+}
+.offset10 {
+  margin-left: 800px;
+}
+.offset9 {
+  margin-left: 720px;
+}
+.offset8 {
+  margin-left: 640px;
+}
+.offset7 {
+  margin-left: 560px;
+}
+.offset6 {
+  margin-left: 480px;
+}
+.offset5 {
+  margin-left: 400px;
+}
+.offset4 {
+  margin-left: 320px;
+}
+.offset3 {
+  margin-left: 240px;
+}
+.offset2 {
+  margin-left: 160px;
+}
+.offset1 {
+  margin-left: 80px;
+}
+[class*="center"] {
+  text-align: center;
+}

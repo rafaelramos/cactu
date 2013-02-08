@@ -1,0 +1,20 @@
+//
+// Mixins
+// --------------------------------------------------
+
+.group() {
+	border: thick solid transparent;
+    overflow: hidden;
+}
+
+
+// Grid
+//----------------------
+
+.span(@columns) {
+   	width: (@grid_column_width * @columns) + ((@grid_column_margin * 2) * (@columns - 1));
+}
+
+.margin_left(@margin) {
+	margin-left: (@grid_column_width * @margin) + ((@grid_column_margin * 2) * (@margin - 1)) + (@grid_column_margin * 2);
+}
