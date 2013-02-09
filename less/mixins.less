@@ -12,9 +12,13 @@
 //----------------------
 
 .span(@columns) {
-   	width: (@grid_column_width * @columns) + ((@grid_column_margin * 2) * (@columns - 1));
+	width: (@grid_column_width * @columns) + ((@grid_column_margin * 2) * (@columns - 1));
 }
 
-.margin_left(@margin) {
-	margin-left: (@grid_column_width * @margin) + ((@grid_column_margin * 2) * (@margin - 1)) + (@grid_column_margin * 2);
+.margin_left(@columns) {
+	margin-left: (@grid_column_width * @columns) + ((@grid_column_margin * 2) * (@columns - 1)) + (@grid_column_margin * 2);
+}
+
+.centered(@columns) {
+	margin: 0 (@grid_row_width - ((@grid_column_width * @columns) + ((@grid_column_margin * 2) * (@columns - 1))))/2;
 }
