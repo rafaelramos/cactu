@@ -1,0 +1,97 @@
+/*
+ * Cactu v0.0.4
+ * 
+ * Copyright 2013 Giovanni Mendoza
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Designed and built with all the love to beautiful interfaces.
+ *
+ *
+ *
+ */
+/* ==================================
+   ============== GRID ============== */
+.container,
+.row {
+  margin: 0 auto;
+  border: thick 1px solid transparent;
+  overflow: hidden;
+  width: 100%;
+}
+/* ========================================
+   ============== GRID FLUID ============== */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.visible-phone {
+  display: none !important;
+}
+.visible-tablet {
+  display: none !important;
+}
+.hidden-desktop {
+  display: none !important;
+}
+.visible-desktop {
+  display: inherit !important;
+}
+/*
+*/
+@media (min-width: 768px) and (max-width: 979px) {
+  .hidden-desktop {
+    display: inherit !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-tablet {
+    display: inherit !important;
+  }
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+/*
+*/
+@media (max-width: 767px) {
+  .hidden-desktop {
+    display: inherit !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-phone {
+    display: inherit !important;
+  }
+  .hidden-phone {
+    display: none !important;
+  }
+  .visible-print {
+    display: none !important;
+  }
+}
+/*
+*/
+@media print {
+  .visible-print {
+    display: inherit !important;
+  }
+  .hidden-print {
+    display: none !important;
+  }
+}
+/*
+*/
+@media (min-width: 1200px) {
+  .row {
+    width: 97.5%;
+  }
+  [class*="col"] {
+    border: thick 1px solid transparent;
+    overflow: hidden;
+    float: left;
+    margin: 0 1.25%;
+  }
+}
