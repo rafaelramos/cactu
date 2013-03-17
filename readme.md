@@ -1,8 +1,6 @@
-CARACTERISTICAS
+FEATURES
 ----------------------
 
-- Permíte crear páginas web de una manera fácil y rápida.
-- Contiene sólo código necesario para que se carguen rápido la librería.
-- Es fácil de entender.
-
-
+- Create a website easily and quickly.
+- Contains only necessary code so they load faster pages.
+- It's easy to understand.
