@@ -1,0 +1,61 @@
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Grid 960px
+/* ====================================== */
+/* ============== GRID 960 ============== */
+.container, .row {
+	margin: 0 auto;
+	.group;
+	width: @grid_row_width;
+}
+
+[class*="col"] {
+	.group;
+	float: left;
+	margin: 0 @grid_column_margin;
+}
+
+.col12 { .span(12); }
+.col11 { .span(11); }
+.col10 { .span(10); }
+.col9 { .span(9); }
+.col8 { .span(8); }
+.col7 { .span(7); }
+.col6 { .span(6); }
+.col5 { .span(5); }
+.col4 { .span(4); }
+.col3 { .span(3); }
+.col2 { .span(2); }
+.col1 { .span(1); }
+/*----------------------*/
+/* ----- Offsets  ----- */
+.offset11 { .margin_left(11); }
+.offset10 { .margin_left(10); }
+.offset9 { .margin_left(9); }
+.offset8 { .margin_left(8); }
+.offset7 { .margin_left(7); }
+.offset6 { .margin_left(6); }
+.offset5 { .margin_left(5); }
+.offset4 { .margin_left(4); }
+.offset3 { .margin_left(3); }
+.offset2 { .margin_left(2); }
+.offset1 { .margin_left(1); }
+/*--------------------------*/
+/* ----- Cols center  ----- */
+[class*="center"] { text-align: center; }
+
+.center12 { .centered(12); }
+.center11 { .centered(11); }
+.center10 { .centered(10); }
+.center9 { .centered(9); }
+.center8 { .centered(8); }
+.center7 { .centered(7); }
+.center6 { .centered(6); }
+.center5 { .centered(5); }
+.center4 { .centered(4); }
+.center3 { .centered(3); }
+.center2 { .centered(2); }
+.center1 { .centered(1); }
