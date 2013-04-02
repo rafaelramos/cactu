@@ -1,0 +1,16 @@
+//
+// RESPONSIVE 1200px MIN
+// --------------------------------------------------
+
+@media (min-width: 1200px) {
+	.row { width: 1200px; }
+
+	[class *="col"] {
+		@include encapsulated;
+		float: left;
+		margin: 0 1.25%;
+	}
+	
+	.col4 { width: 30.83333333%; }
+	.col12 { width: 97.5%; }
+}

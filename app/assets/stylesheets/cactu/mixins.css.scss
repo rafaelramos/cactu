@@ -1,0 +1,9 @@
+//
+// MIXINS
+// --------------------------------------------------
+
+
+@mixin encapsulated {
+  border: thick 1px solid transparent;
+  overflow: hidden;
+}

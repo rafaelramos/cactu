@@ -1,0 +1,15 @@
+//
+// RESPONSIVE 768px MIN - 979px MAX
+// --------------------------------------------------
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	// ---- 960 = 100% ----
+	[class *="col"] {
+		@include encapsulated;
+		float: left;
+		margin: 0 1.041666667%;
+	}
+
+	.col4 { width: 31.25%; }
+	.col12 { width: 97.91666667%; }
+}
