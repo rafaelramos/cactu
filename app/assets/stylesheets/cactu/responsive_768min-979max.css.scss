@@ -7,9 +7,38 @@
 	[class *="col"] {
 		@include encapsulated;
 		float: left;
-		margin: 0 1.041666667%;
+		margin: 0 1.0416666666666667%;
 	}
 
+	.col1 { width: 6.25%; }
+	.col2 { width: 14.583333333333334%; }
+	.col3 { width: 22.916666666666668%; }
 	.col4 { width: 31.25%; }
-	.col12 { width: 97.91666667%; }
+	.col5 { width: 39.583333333333336%; }
+	.col6 { width: 47.916666666666664%; }
+	.col7 { width: 56.25%; }
+	.col8 { width: 64.58333333333333%; }
+	.col9 { width: 72.91666666666667%; }
+	.col10 { width: 81.25%; }
+	.col11 { width: 89.58333333333333%; }
+	.col12 { width: 97.91666666666667%; }
 }
+/*
+for i in(1..12) do
+	size = 960.0
+  col = 60
+  marg = 20
+  width = (i*col) + ((marg*i) - marg)
+  porcent = (width*100) / size
+  puts ".col#{i} { width: #{porcent}%; }"
+end
+
+for i in(1..12) do
+	size = 1200.0
+  col = 70
+  marg = 30
+  width = (i*col) + ((marg*i) - marg)
+  porcent = (width*100) / size
+  puts ".col#{i} { width: #{porcent}%; }"
+end
+*/
