@@ -2,25 +2,26 @@
 // RESPONSIVE 1200px MIN
 // --------------------------------------------------
 
+/*-------- Large Resolutions --------*/
 @media (min-width: 1200px) {
 	.row { width: 1200px; }
 
 	[class *="col"] {
 		@include encapsulated;
 		float: left;
-		margin: 0 1.25%;
+		@include margin_l_r_large;
 	}
-	
-	.col1 { width: 5.833333333333333%; }
-	.col2 { width: 14.166666666666666%; }
-	.col3 { width: 22.5%; }
-	.col4 { width: 30.833333333333332%; }
-	.col5 { width: 39.166666666666664%; }
-	.col6 { width: 47.5%; }
-	.col7 { width: 55.833333333333336%; }
-	.col8 { width: 64.16666666666667%; }
-	.col9 { width: 72.5%; }
-	.col10 { width: 80.83333333333333%; }
-	.col11 { width: 89.16666666666667%; }
-	.col12 { width: 97.5%; }
+
+	.col1 { @include width_porcent_large(1%); }
+	.col2 { @include width_porcent_large(2%); }
+	.col3 { @include width_porcent_large(3%); }
+	.col4 { @include width_porcent_large(4%); }
+	.col5 { @include width_porcent_large(5%); }
+	.col6 { @include width_porcent_large(6%); }
+	.col7 { @include width_porcent_large(7%); }
+	.col8 { @include width_porcent_large(8%); }
+	.col9 { @include width_porcent_large(9%); }
+	.col10 { @include width_porcent_large(10%); }
+	.col11 { @include width_porcent_large(11%); }
+	.col12 { @include width_porcent_large(12%); }
 }

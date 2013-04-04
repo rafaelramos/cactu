@@ -2,8 +2,29 @@
 // MIXINS
 // --------------------------------------------------
 
-
 @mixin encapsulated {
   border: thick 1px solid transparent;
   overflow: hidden;
+}
+
+@mixin width_porcent_large($in) {
+  $col_width: ($in * $column_width_large) + (($column_margin_large * $in) - $column_margin_large);
+  $porcentage: ($col_width * 100) / $row_width_large;
+  width: $porcentage;
+}
+
+@mixin margin_l_r_large {
+  $marg: ($margin_l_r_large * 100) / $row_width_large;
+  margin: 0 $marg;
+}
+
+@mixin width_porcent_medium($in) {
+  $col_width: ($in * $column_width_medium) + (($column_margin_medium * $in) - $column_margin_medium);
+  $porcentage: ($col_width * 100) / $row_width_medium;
+  width: $porcentage;
+}
+
+@mixin margin_l_r_medium {
+  $marg: ($margin_l_r_medium * 100) / $row_width_medium;
+  margin: 0 $marg;
 }

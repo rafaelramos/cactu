@@ -3,12 +3,24 @@
 // --------------------------------------------------
 
 
-// Grid
+// Grids
 // --------------------------------------------------
 
-// Responsive grid
+// Responsive grid 1200px
 // -------------------------
-$grid_columns:        12px;
-$grid_column_width:   70px;
-$grid_column_margin:  15px;
-$grid_row_width:      1200px;
+$columns_large:        12;
+$column_width_large:   70;
+$column_margin_large:  30;
+$row_width_large:      1200;
+
+$margin_l_r_large:     15%;
+
+
+// Responsive grid 768px - 1199px
+// --------------------------------
+$columns_medium:        12;
+$column_width_medium:   60;
+$column_margin_medium:  20;
+$row_width_medium:      960;
+
+$margin_l_r_medium:     10%;
