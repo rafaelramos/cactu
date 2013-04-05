@@ -22,4 +22,16 @@
 	.col10 { @include width_porcent_medium(10%); }
 	.col11 { @include width_porcent_medium(11%); }
 	.col12 { @include width_porcent_medium(12%); }
+
+	.offset1 { @include offset_medium(1%); }
+  .offset2 { @include offset_medium(2%); }
+  .offset3 { @include offset_medium(3%); }
+  .offset4 { @include offset_medium(4%); }
+  .offset5 { @include offset_medium(5%); }
+  .offset6 { @include offset_medium(6%); }
+  .offset7 { @include offset_medium(7%); }
+  .offset8 { @include offset_medium(8%); }
+  .offset9 { @include offset_medium(9%); }
+  .offset10 { @include offset_medium(10%); }
+  .offset11 { @include offset_medium(11%); }
 }

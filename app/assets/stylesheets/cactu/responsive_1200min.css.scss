@@ -4,24 +4,35 @@
 
 /*-------- Large Resolutions --------*/
 @media (min-width: 1200px) {
-	.row { width: 1200px; }
+  .row { width: 1200px; }
 
-	[class *="col"] {
-		@include encapsulated;
-		float: left;
-		@include margin_l_r_large;
-	}
+  [class *="col"] {
+    @include encapsulated;
+    float: left;
+    @include margin_l_r_large;
+  }
+  .col1 { @include width_porcent_large(1%); }
+  .col2 { @include width_porcent_large(2%); }
+  .col3 { @include width_porcent_large(3%); }
+  .col4 { @include width_porcent_large(4%); }
+  .col5 { @include width_porcent_large(5%); }
+  .col6 { @include width_porcent_large(6%); }
+  .col7 { @include width_porcent_large(7%); }
+  .col8 { @include width_porcent_large(8%); }
+  .col9 { @include width_porcent_large(9%); }
+  .col10 { @include width_porcent_large(10%); }
+  .col11 { @include width_porcent_large(11%); }
+  .col12 { @include width_porcent_large(12%); }
 
-	.col1 { @include width_porcent_large(1%); }
-	.col2 { @include width_porcent_large(2%); }
-	.col3 { @include width_porcent_large(3%); }
-	.col4 { @include width_porcent_large(4%); }
-	.col5 { @include width_porcent_large(5%); }
-	.col6 { @include width_porcent_large(6%); }
-	.col7 { @include width_porcent_large(7%); }
-	.col8 { @include width_porcent_large(8%); }
-	.col9 { @include width_porcent_large(9%); }
-	.col10 { @include width_porcent_large(10%); }
-	.col11 { @include width_porcent_large(11%); }
-	.col12 { @include width_porcent_large(12%); }
+  .offset1 { @include offset_large(1%); }
+  .offset2 { @include offset_large(2%); }
+  .offset3 { @include offset_large(3%); }
+  .offset4 { @include offset_large(4%); }
+  .offset5 { @include offset_large(5%); }
+  .offset6 { @include offset_large(6%); }
+  .offset7 { @include offset_large(7%); }
+  .offset8 { @include offset_large(8%); }
+  .offset9 { @include offset_large(9%); }
+  .offset10 { @include offset_large(10%); }
+  .offset11 { @include offset_large(11%); }
 }

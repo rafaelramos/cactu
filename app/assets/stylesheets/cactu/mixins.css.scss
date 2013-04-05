@@ -2,10 +2,13 @@
 // MIXINS
 // --------------------------------------------------
 
+
 @mixin encapsulated {
   border: thick 1px solid transparent;
   overflow: hidden;
 }
+
+// Grids ------------------------
 
 @mixin width_porcent_large($in) {
   $col_width: ($in * $column_width_large) + (($column_margin_large * $in) - $column_margin_large);
@@ -27,4 +30,16 @@
 @mixin margin_l_r_medium {
   $marg: ($margin_l_r_medium * 100) / $row_width_medium;
   margin: 0 $marg;
+}
+
+@mixin offset_large($in) {
+  $offset: ($column_width_large * $in) + ($column_margin_large * $in) + $margin_l_r_large;
+  $offset_porcent: ($offset * 100) / $row_width_large;
+  margin-left: $offset_porcent;
+}
+
+@mixin offset_medium($in) {
+  $offset: ($column_width_medium * $in) + ($column_margin_medium * $in) + $margin_l_r_medium;
+  $offset_porcent: ($offset * 100) / $row_width_medium;
+  margin-left: $offset_porcent;
 }
