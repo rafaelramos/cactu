@@ -4,12 +4,12 @@
 
 //HTML & BODY --------------
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-	width: 100%;
+  width: 100%;
   height: 100%;
   font: 0.875em Arial, Helvetica, sans-serif;
   color: #333333;
@@ -17,7 +17,7 @@ html, body {
 }
 
 .container, .row {
-	@include encapsulated;
+  @include encapsulated;
   margin: 0 auto;
   width: 100%;	
 }
