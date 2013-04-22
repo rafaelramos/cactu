@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 %html{:lang => "en"}
-	%head
-		%title Cactu
-		%meta{:charset => "utf-8"}
-		%meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-		= favicon_link_tag 'favicon.ico'
-		= stylesheet_link_tag 'cactu/cactu'
-		= javascript_include_tag "application", "data-turbolinks-track" => true
-		= csrf_meta_tags
+  %head
+    %title Cactu
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    = favicon_link_tag 'favicon.ico'
+    = stylesheet_link_tag 'cactu/cactu'
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
 
-	%body
+  %body
 
-		= yield
+    = yield
 
 %html
