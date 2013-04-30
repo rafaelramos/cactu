@@ -8714,3 +8714,69 @@ ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-30 00:29:40 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 131ms (Views: 130.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cactu/cactu.css?body=1" for 127.0.0.1 at 2013-04-30 00:29:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-30 00:29:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-30 00:29:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-04-30 00:29:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-30 00:29:40 -0500
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2013-04-30 00:29:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.beta1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.beta1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.beta1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.beta1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.beta1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.beta1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.beta1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.beta1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.beta1) lib/rails/engine.rb:510:in `call'
+  railties (4.0.0.beta1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.5.0) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.0) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.0) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.0) lib/thin/connection.rb:54:in `process'
+  thin (1.5.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.0) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.0) lib/thin/server.rb:159:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0.beta1) lib/rails/commands/server.rb:80:in `start'
+  railties (4.0.0.beta1) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0.beta1) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0.beta1) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/giovanni/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/giovanni/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/giovanni/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/giovanni/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.beta1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.6ms)
