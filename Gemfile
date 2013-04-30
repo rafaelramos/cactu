@@ -33,7 +33,8 @@ gem 'jbuilder', '~> 1.0.1'
 
 group :production do
   gem 'thin'
-  gem 'pg'
+  #gem 'pg'
+  gem 'sqlite3'
 end
 gem 'rb-readline'
 
