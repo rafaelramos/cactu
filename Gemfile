@@ -6,6 +6,7 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'bourbon'
 
 gem 'mandrill_mailer'
 gem 'gibbon'
