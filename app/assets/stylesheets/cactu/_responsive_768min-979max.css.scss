@@ -7,31 +7,31 @@
   [class *="col"] {
     overflow: hidden;
     float: left;
-    @include margin_l_r($column_width_medium, $column_margin_medium, $columns_medium);
+    @include margin_lr_medium();
   }
 
-  .col1 { @include type_grid(1%, false, true); }
-  .col2 { @include type_grid(2%, false, true); }
-  .col3 { @include type_grid(3%, false, true); }
-  .col4 { @include type_grid(4%, false, true); }
-  .col5 { @include type_grid(5%, false, true); }
-  .col6 { @include type_grid(6%, false, true); }
-  .col7 { @include type_grid(7%, false, true); }
-  .col8 { @include type_grid(8%, false, true); }
-  .col9 { @include type_grid(9%, false, true); }
-  .col10 { @include type_grid(10%, false, true); }
-  .col11 { @include type_grid(11%, false, true); }
-  .col12 { @include type_grid(12%, false, true); }
+  .col1 { @include grid_medium(1); }
+  .col2 { @include grid_medium(2); }
+  .col3 { @include grid_medium(3); }
+  .col4 { @include grid_medium(4); }
+  .col5 { @include grid_medium(5); }
+  .col6 { @include grid_medium(6); }
+  .col7 { @include grid_medium(7); }
+  .col8 { @include grid_medium(8); }
+  .col9 { @include grid_medium(9); }
+  .col10 { @include grid_medium(10); }
+  .col11 { @include grid_medium(11); }
+  .col12 { @include grid_medium(12); }
 
-  .offset1 { @include type_grid(1%, false, false); }
-  .offset2 { @include type_grid(2%, false, false); }
-  .offset3 { @include type_grid(3%, false, false); }
-  .offset4 { @include type_grid(4%, false, false); }
-  .offset5 { @include type_grid(5%, false, false); }
-  .offset6 { @include type_grid(6%, false, false); }
-  .offset7 { @include type_grid(7%, false, false); }
-  .offset8 { @include type_grid(8%, false, false); }
-  .offset9 { @include type_grid(9%, false, false); }
-  .offset10 { @include type_grid(10%, false, false); }
-  .offset11 { @include type_grid(11%, false, false); }
+  .offset1 { @include offset_medium(1); }
+  .offset2 { @include offset_medium(2); }
+  .offset3 { @include offset_medium(3); }
+  .offset4 { @include offset_medium(4); }
+  .offset5 { @include offset_medium(5); }
+  .offset6 { @include offset_medium(6); }
+  .offset7 { @include offset_medium(7); }
+  .offset8 { @include offset_medium(8); }
+  .offset9 { @include offset_medium(9); }
+  .offset10 { @include offset_medium(10); }
+  .offset11 { @include offset_medium(11); }
 }

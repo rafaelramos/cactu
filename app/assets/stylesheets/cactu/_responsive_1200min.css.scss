@@ -9,31 +9,31 @@
   [class *="col"] {
     overflow: hidden;
     float: left;
-    @include margin_l_r($column_width_large, $column_margin_large, $columns_large);
+    @include margin_lr_larger();
   }
 
-  .col1 { @include type_grid(1%, true, true); }
-  .col2 { @include type_grid(2%, true, true); }
-  .col3 { @include type_grid(3%, true, true); }
-  .col4 { @include type_grid(4%, true, true); }
-  .col5 { @include type_grid(5%, true, true); }
-  .col6 { @include type_grid(6%, true, true); }
-  .col7 { @include type_grid(7%, true, true); }
-  .col8 { @include type_grid(8%, true, true); }
-  .col9 { @include type_grid(9%, true, true); }
-  .col10 { @include type_grid(10%, true, true); }
-  .col11 { @include type_grid(11%, true, true); }
-  .col12 { @include type_grid(12%, true, true); }
+  .col1 { @include grid_largr(1); }
+  .col2 { @include grid_largr(2); }
+  .col3 { @include grid_largr(3); }
+  .col4 { @include grid_largr(4); }
+  .col5 { @include grid_largr(5); }
+  .col6 { @include grid_largr(6); }
+  .col7 { @include grid_largr(7); }
+  .col8 { @include grid_largr(8); }
+  .col9 { @include grid_largr(9); }
+  .col10 { @include grid_largr(10); }
+  .col11 { @include grid_largr(11); }
+  .col12 { @include grid_largr(12); }
 
-  .offset1 { @include type_grid(1%, true, false); }
-  .offset2 { @include type_grid(2%, true, false); }
-  .offset3 { @include type_grid(3%, true, false); }
-  .offset4 { @include type_grid(4%, true, false); }
-  .offset5 { @include type_grid(5%, true, false); }
-  .offset6 { @include type_grid(6%, true, false); }
-  .offset7 { @include type_grid(7%, true, false); }
-  .offset8 { @include type_grid(8%, true, false); }
-  .offset9 { @include type_grid(9%, true, false); }
-  .offset10 { @include type_grid(10%, true, false); }
-  .offset11 { @include type_grid(11%, true, false); }
+  .offset1 { @include offset_largr(1); }
+  .offset2 { @include offset_largr(2); }
+  .offset3 { @include offset_largr(3); }
+  .offset4 { @include offset_largr(4); }
+  .offset5 { @include offset_largr(5); }
+  .offset6 { @include offset_largr(6); }
+  .offset7 { @include offset_largr(7); }
+  .offset8 { @include offset_largr(8); }
+  .offset9 { @include offset_largr(9); }
+  .offset10 { @include offset_largr(10); }
+  .offset11 { @include offset_largr(11); }
 }

@@ -2,19 +2,21 @@
 // VARIABLES
 // --------------------------------------------------
 
+// The global variables have separate words with "-" and the other varibales with "_" 
 
 // Grids
 // --------------------------------------------------
 
 // Responsive grid 1200px
-// -------------------------
-$columns_large:        12;
-$column_width_large:   70;
-$column_margin_large:  30;
+//--------------------------------
+
+$gl-column:   70px;
+$gl-gutter:   30px;
+$max-columns: 12;
 
 
 // Responsive grid 768px - 1199px
-// --------------------------------
-$columns_medium:        12;
-$column_width_medium:   60;
-$column_margin_medium:  20;
+//--------------------------------
+
+$gm-column: $gl-column - 10;
+$gm-gutter: $gl-gutter - 10;

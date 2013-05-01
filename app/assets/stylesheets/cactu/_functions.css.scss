@@ -1,0 +1,10 @@
+//
+// FUNCTIONS
+// --------------------------------------------------
+
+
+// Grids ------------------------
+
+@function grid_size($columns, $gutter) {
+  @return ($max-columns * $columns) + ($max-columns * $gutter);
+}

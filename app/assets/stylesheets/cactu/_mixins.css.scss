@@ -5,46 +5,30 @@
 
 // Grids ------------------------
 
-@mixin width_porcent($columns, $col_width, $margin,  $largr) {
-  $grid_size: ($largr * $col_width) + ($largr * $margin);
-  $col_width: ($columns * $col_width) + (($margin * $columns) - $margin);
-  $porcentage: ($col_width * 100) / $grid_size;
-  width: $porcentage;
+@mixin margin_lr_larger() {
+  margin: 0 (percentage(($gl-gutter / 2) / grid_size($gl-column, $gl_gutter)));
 }
 
-@mixin offset($columns, $col_width, $margin,  $largr) {
-  $grid_size: ($largr * $col_width) + ($largr * $margin);
-  $offset: ($columns * $col_width) + ($margin * $columns) + ($margin / 2);
-  $offset_porcent: ($offset * 100) / $grid_size;
-  margin-left: $offset_porcent;
+@mixin margin_lr_medium() {
+  margin: 0 (percentage(($gm-gutter / 2) / grid_size($gm-column, $gm_gutter)));
 }
 
-@mixin margin_l_r($col_width, $margin, $largr) {
-  $grid_size: ($largr * $col_width) + ($largr * $margin);
-  $marg: (($margin / 2) * 100) / $grid_size;
-  margin: 0 (1% * $marg);
+@mixin grid_largr($columns) {
+  $col_width: ($columns * $gl-column) + (($gl-gutter * $columns) - $gl-gutter);
+  width: percentage($col_width / grid-size($gl-column, $gl-gutter));
 }
 
-@mixin type_grid($columns, $large, $mixin) {
-  @if $large == true {
-    $col_width: $column_width_large;
-    $margn: $column_margin_large;
-    $largr: $columns_large;
-    
-    @if $mixin == true {
-      @include width_porcent($columns, $col_width, $margn,  $largr);
-    }
-    @else { @include offset($columns, $col_width, $margn,  $largr); }
-  }
-  @else {
-    $col_width: $column_width_medium;
-    $margn: $column_margin_medium;
-    $largr: $columns_medium;
-
-    @if $mixin == true {
-      @include width_porcent($columns, $col_width, $margn,  $largr);
-    }
-    @else { @include offset($columns, $col_width, $margn,  $largr); }
-  }
+@mixin grid_medium($columns) {
+  $col_width: ($columns * $gm-column) + (($gm-gutter * $columns) - $gm-gutter);
+  width: percentage($col_width / grid-size($gm-column, $gm-gutter));
 }
- 
+
+@mixin offset_largr($columns) {
+  $offset: ($columns * $gl-column) + ($gl-gutter * $columns) + ($gl-gutter / 2);
+  margin-left: percentage($offset / grid-size($gl-column, $gl-gutter));
+}
+
+@mixin offset_medium($columns) {
+  $offset: ($columns * $gm-column) + ($gm-gutter * $columns) + ($gm-gutter / 2);
+  margin-left: percentage($offset / grid-size($gm-column, $gm-gutter));
+}

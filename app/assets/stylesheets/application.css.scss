@@ -1,9 +1,10 @@
 @import "bourbon";
 @import 'cactu/variables';
 @import 'cactu/mixins';
+@import 'cactu/functions';
 @import 'cactu/scafolding';
 
-// Grids responsive
+// Responsive grids
 @import 'cactu/responsive_767max';
 @import 'cactu/responsive_768min-979max';
 @import 'cactu/responsive_1200min';
