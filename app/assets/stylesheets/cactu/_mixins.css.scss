@@ -32,3 +32,19 @@
   $offset: ($columns * $gm-column) + ($gm-gutter * $columns) + ($gm-gutter / 2);
   margin-left: percentage($offset / grid-size($gm-column, $gm-gutter));
 }
+
+@mixin centered_largr($columns) {
+  $col_width: ($columns * $gl-column) + (($gl-gutter * $columns) - $gl-gutter);
+  $centered: (grid-size($gl-column, $gl-gutter) - $col_width) / 2;
+  margin-left: percentage($centered / grid-size($gl-column, $gl-gutter));
+  margin-right: percentage($centered / grid-size($gl-column, $gl-gutter));
+  text-align: center;
+}
+
+@mixin centered_medium($columns) {
+  $col_width: ($columns * $gm-column) + (($gm-gutter * $columns) - $gm-gutter);
+  $centered: (grid-size($gm-column, $gm-gutter) - $col_width) / 2;
+  margin-left: percentage($centered / grid-size($gm-column, $gm-gutter));
+  margin-right: percentage($centered / grid-size($gm-column, $gm-gutter));
+  text-align: center;
+}

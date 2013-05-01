@@ -34,4 +34,16 @@
   .offset9 { @include offset_medium(9); }
   .offset10 { @include offset_medium(10); }
   .offset11 { @include offset_medium(11); }
+
+  .centered1 { @include centered_medium(1); }
+  .centered2 { @include centered_medium(2); }
+  .centered3 { @include centered_medium(3); }
+  .centered4 { @include centered_medium(4); }
+  .centered5 { @include centered_medium(5); }
+  .centered6 { @include centered_medium(6); }
+  .centered7 { @include centered_medium(7); }
+  .centered8 { @include centered_medium(8); }
+  .centered9 { @include centered_medium(9); }
+  .centered10 { @include centered_medium(10); }
+  .centered11 { @include centered_medium(11); }
 }
