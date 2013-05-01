@@ -25,10 +25,6 @@
   margin: 0 (1% * $marg);
 }
 
-$col_width: 0;
-$margn: 0;
-$largr: 0;
-
 @mixin type_grid($columns, $large, $mixin) {
   @if $large == true {
     $col_width: $column_width_large;
