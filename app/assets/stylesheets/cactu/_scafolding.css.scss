@@ -22,6 +22,12 @@ html, body {
   width: 100%;	
 }
 
-.col4 {
+[class *="centered-"] {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.four-columns {
   @include linear-gradient(blue, red);
 }

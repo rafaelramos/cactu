@@ -8,3 +8,23 @@
 @function grid_size($columns, $gutter) {
   @return ($max-columns * $columns) + ($max-columns * $gutter);
 }
+
+@function column_width_large($columns) {
+  $col_width: ($columns * $gl-column-width) + (($gl-gutter * $columns) - $gl-gutter);
+  @return percentage($col_width / grid-size($gl-column-width, $gl-gutter));
+}
+
+@function column_width_medium($columns) {
+  $col_width: ($columns * $gm-column-width) + (($gm-gutter * $columns) - $gm-gutter);
+  @return percentage($col_width / grid-size($gm-column-width, $gm-gutter));
+}
+
+@function offset_large($columns) {
+  $offset: ($columns * $gl-column-width) + ($gl-gutter * $columns) + ($gl-gutter / 2);
+  @return percentage($offset / grid-size($gl-column-width, $gl-gutter));
+}
+
+@function offset_medium($columns) {
+  $offset: ($columns * $gm-column-width) + ($gm-gutter * $columns) + ($gm-gutter / 2);
+  @return percentage($offset / grid-size($gm-column-width, $gm-gutter));
+}

@@ -10,40 +10,41 @@
     @include margin_lr_medium();
   }
 
-  .one-columns { @include grid_medium(1); }
-  .two-columns { @include grid_medium(2); }
-  .three-columns { @include grid_medium(3); }
-  .four-columns { @include grid_medium(4); }
-  .five-columns { @include grid_medium(5); }
-  .six-columns { @include grid_medium(6); }
-  .seven-columns { @include grid_medium(7); }
-  .eight-columns { @include grid_medium(8); }
-  .nine-columns { @include grid_medium(9); }
-  .ten-columns { @include grid_medium(10); }
-  .eleven-columns { @include grid_medium(11); }
-  .twelve-columns { @include grid_medium(12); }
+  .one-columns { width: column_width_medium(1); }
+  .two-columns { width: column_width_medium(2); }
+  .three-columns { width: column_width_medium(3); }
+  .four-columns { width: column_width_medium(4); }
+  .five-columns { width: column_width_medium(5); }
+  .six-columns { width: column_width_medium(6); }
+  .seven-columns { width: column_width_medium(7); }
+  .eight-columns { width: column_width_medium(8); }
+  .nine-columns { width: column_width_medium(9); }
+  .ten-columns { width: column_width_medium(10); }
+  .eleven-columns { width: column_width_medium(11); }
+  .twelve-columns { width: column_width_medium(12); }
 
-  .offset-1 { @include offset_medium(1); }
-  .offset-2 { @include offset_medium(2); }
-  .offset-3 { @include offset_medium(3); }
-  .offset-4 { @include offset_medium(4); }
-  .offset-5 { @include offset_medium(5); }
-  .offset-6 { @include offset_medium(6); }
-  .offset-7 { @include offset_medium(7); }
-  .offset-8 { @include offset_medium(8); }
-  .offset-9 { @include offset_medium(9); }
-  .offset-10 { @include offset_medium(10); }
-  .offset-11 { @include offset_medium(11); }
+  .offset-one { margin-left: offset_medium(1); }
+  .offset-two { margin-left: offset_medium(2); }
+  .offset-three { margin-left: offset_medium(3); }
+  .offset-four { margin-left: offset_medium(4); }
+  .offset-five { margin-left: offset_medium(5); }
+  .offset-six { margin-left: offset_medium(6); }
+  .offset-seven { margin-left: offset_medium(7); }
+  .offset-eight { margin-left: offset_medium(8); }
+  .offset-nine { margin-left: offset_medium(9); }
+  .offset-ten { margin-left: offset_medium(10); }
+  .offset-eleven { margin-left: offset_medium(11); }
 
-  .centered-1 { @include centered_medium(1); }
-  .centered-2 { @include centered_medium(2); }
-  .centered-3 { @include centered_medium(3); }
-  .centered-4 { @include centered_medium(4); }
-  .centered-5 { @include centered_medium(5); }
-  .centered-6 { @include centered_medium(6); }
-  .centered-7 { @include centered_medium(7); }
-  .centered-8 { @include centered_medium(8); }
-  .centered-9 { @include centered_medium(9); }
-  .centered-10 { @include centered_medium(10); }
-  .centered-11 { @include centered_medium(11); }
+  .centered-one { width: column_width_medium(1); }
+  .centered-two { width: column_width_medium(2); }
+  .centered-three { width: column_width_medium(3); }
+  .centered-four { width: column_width_medium(4); }
+  .centered-five { width: column_width_medium(5); }
+  .centered-six { width: column_width_medium(6); }
+  .centered-seven { width: column_width_medium(7); }
+  .centered-eight { width: column_width_medium(8); }
+  .centered-nine { width: column_width_medium(9); }
+  .centered-ten { width: column_width_medium(10); }
+  .centered-eleven { width: column_width_medium(11); }
+  .centered-twelve { width: column_width_medium(12); }
 }
