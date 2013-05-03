@@ -7,16 +7,16 @@
 // Grids
 // --------------------------------------------------
 
-// Responsive grid 1200px
+// Responsive grid large
 //--------------------------------
 
-$gl-column:   70px;
-$gl-gutter:   30px;
-$max-columns: 12;
+$gl-column-width: 70px;
+$gl-gutter:       30px;
+$max-columns:     12;
 
 
-// Responsive grid 768px - 1199px
+// Responsive grid medium
 //--------------------------------
 
-$gm-column: $gl-column - 10;
+$gm-column-width: $gl-column-width - 10;
 $gm-gutter: $gl-gutter - 10;

@@ -1,0 +1,51 @@
+//
+// RESPONSIVE LARGE
+// --------------------------------------------------
+
+/*-------- Large Resolutions --------*/
+@media (min-width: grid-size($gl-column-width, $gl-gutter)) {
+  .row { width: grid-size($gl-column-width, $gl-gutter); }
+
+  [class *="-columns"] {
+    overflow: hidden;
+    float: left;
+    @include margin_lr_large();
+  }
+
+  .one-columns { @include grid_large(1); }
+  .two-columns { @include grid_large(2); }
+  .three-columns { @include grid_large(3); }
+  .four-columns { @include grid_large(4); }
+  .five-columns { @include grid_large(5); }
+  .six-columns { @include grid_large(6); }
+  .seven-columns { @include grid_large(7); }
+  .eight-columns { @include grid_large(8); }
+  .nine-columns { @include grid_large(9); }
+  .ten-columns { @include grid_large(10); }
+  .eleven-columns { @include grid_large(11); }
+  .twelve-columns { @include grid_large(12); }
+
+  .offset-1 { @include offset_large(1); }
+  .offset-2 { @include offset_large(2); }
+  .offset-3 { @include offset_large(3); }
+  .offset-4 { @include offset_large(4); }
+  .offset-5 { @include offset_large(5); }
+  .offset-6 { @include offset_large(6); }
+  .offset-7 { @include offset_large(7); }
+  .offset-8 { @include offset_large(8); }
+  .offset-9 { @include offset_large(9); }
+  .offset-10 { @include offset_large(10); }
+  .offset-11 { @include offset_large(11); }
+
+  .centered-1 { @include centered_large(1); }
+  .centered-2 { @include centered_large(2); }
+  .centered-3 { @include centered_large(3); }
+  .centered-4 { @include centered_large(4); }
+  .centered-5 { @include centered_large(5); }
+  .centered-6 { @include centered_large(6); }
+  .centered-7 { @include centered_large(7); }
+  .centered-8 { @include centered_large(8); }
+  .centered-9 { @include centered_large(9); }
+  .centered-10 { @include centered_large(10); }
+  .centered-11 { @include centered_large(11); }
+}

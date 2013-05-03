@@ -5,46 +5,46 @@
 
 // Grids ------------------------
 
-@mixin margin_lr_larger() {
-  margin: 0 (percentage(($gl-gutter / 2) / grid_size($gl-column, $gl_gutter)));
+@mixin margin_lr_large() {
+  margin: 0 (percentage(($gl-gutter / 2) / grid_size($gl-column-width, $gl_gutter)));
 }
 
 @mixin margin_lr_medium() {
-  margin: 0 (percentage(($gm-gutter / 2) / grid_size($gm-column, $gm_gutter)));
+  margin: 0 (percentage(($gm-gutter / 2) / grid_size($gm-column-width, $gm_gutter)));
 }
 
-@mixin grid_largr($columns) {
-  $col_width: ($columns * $gl-column) + (($gl-gutter * $columns) - $gl-gutter);
-  width: percentage($col_width / grid-size($gl-column, $gl-gutter));
+@mixin grid_large($columns) {
+  $col_width: ($columns * $gl-column-width) + (($gl-gutter * $columns) - $gl-gutter);
+  width: percentage($col_width / grid-size($gl-column-width, $gl-gutter));
 }
 
 @mixin grid_medium($columns) {
-  $col_width: ($columns * $gm-column) + (($gm-gutter * $columns) - $gm-gutter);
-  width: percentage($col_width / grid-size($gm-column, $gm-gutter));
+  $col_width: ($columns * $gm-column-width) + (($gm-gutter * $columns) - $gm-gutter);
+  width: percentage($col_width / grid-size($gm-column-width, $gm-gutter));
 }
 
-@mixin offset_largr($columns) {
-  $offset: ($columns * $gl-column) + ($gl-gutter * $columns) + ($gl-gutter / 2);
-  margin-left: percentage($offset / grid-size($gl-column, $gl-gutter));
+@mixin offset_large($columns) {
+  $offset: ($columns * $gl-column-width) + ($gl-gutter * $columns) + ($gl-gutter / 2);
+  margin-left: percentage($offset / grid-size($gl-column-width, $gl-gutter));
 }
 
 @mixin offset_medium($columns) {
-  $offset: ($columns * $gm-column) + ($gm-gutter * $columns) + ($gm-gutter / 2);
-  margin-left: percentage($offset / grid-size($gm-column, $gm-gutter));
+  $offset: ($columns * $gm-column-width) + ($gm-gutter * $columns) + ($gm-gutter / 2);
+  margin-left: percentage($offset / grid-size($gm-column-width, $gm-gutter));
 }
 
-@mixin centered_largr($columns) {
-  $col_width: ($columns * $gl-column) + (($gl-gutter * $columns) - $gl-gutter);
-  $centered: (grid-size($gl-column, $gl-gutter) - $col_width) / 2;
-  margin-left: percentage($centered / grid-size($gl-column, $gl-gutter));
-  margin-right: percentage($centered / grid-size($gl-column, $gl-gutter));
+@mixin centered_large($columns) {
+  $col_width: ($columns * $gl-column-width) + (($gl-gutter * $columns) - $gl-gutter);
+  $centered: (grid-size($gl-column-width, $gl-gutter) - $col_width) / 2;
+  margin-left: percentage($centered / grid-size($gl-column-width, $gl-gutter));
+  margin-right: percentage($centered / grid-size($gl-column-width, $gl-gutter));
   text-align: center;
 }
 
 @mixin centered_medium($columns) {
-  $col_width: ($columns * $gm-column) + (($gm-gutter * $columns) - $gm-gutter);
-  $centered: (grid-size($gm-column, $gm-gutter) - $col_width) / 2;
-  margin-left: percentage($centered / grid-size($gm-column, $gm-gutter));
-  margin-right: percentage($centered / grid-size($gm-column, $gm-gutter));
+  $col_width: ($columns * $gm-column-width) + (($gm-gutter * $columns) - $gm-gutter);
+  $centered: (grid-size($gm-column-width, $gm-gutter) - $col_width) / 2;
+  margin-left: percentage($centered / grid-size($gm-column-width, $gm-gutter));
+  margin-right: percentage($centered / grid-size($gm-column-width, $gm-gutter));
   text-align: center;
 }
